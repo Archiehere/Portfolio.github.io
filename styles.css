@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+    background: black;
+    color: white;
+}
+.navbar{
+   margin-top: 10px;
+   opacity: 50%;
+   display: flex;
+   /* justify-content: end; */
+   float: right;   
+}
+
+.homepage>div{
+    /* font-family: 'Rubik Dirt', cursive; */
+    font-size: 3rem; 
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Dancing Script', cursive;
+    padding: 50px;
+    /* font-family: 'Passions Conflict', cursive; */
+
+}
+.navbar>a{
+    text-decoration: none;
+    
+    text-align: center;
+    padding: 10px 10px;
+    border: 1px solid white;
+    margin: 5px;
+}
+.navbar>a:hover{
+    box-shadow: 5px 10px red;
+}
+@media screen and (max-width:900px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar>a{
+        width:50%;
+    }
+}
+#main{
+   width:70vw;
+   font-family: 'Rubik Dirt', cursive;
+   font-size: 2rem;
+}
+
+.homepage {
+    /* The image used */
+    width: 100%;
+    height: 90vh;
+    background-image: url("images/BG8.jpeg");
+    background-size: cover; 
+    /* Set a specific height */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
