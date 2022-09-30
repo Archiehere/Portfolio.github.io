@@ -9,6 +9,9 @@ body{
     background-color: black;
     overflow-x: hidden;
 }
+html{
+    overflow-x: hidden;
+}
 .navbar{
    margin-top: 10px;
    opacity: 50%;
@@ -18,7 +21,7 @@ body{
 }
 
 .homepage>div{
-    /* font-family: 'Rubik Dirt', cursive; */
+ 
     font-size: 3rem; 
     height: auto;
     text-align: center;
@@ -28,7 +31,7 @@ body{
     padding: 100px;
     transition: 0.5s;
     background-color: black;
-    /* font-family: 'Passions Conflict', cursive; */
+    
 
 }
 .homepage>div:hover{
@@ -98,13 +101,17 @@ body{
   transition: 0.3s;
   border-radius: 5px;
   padding: 50px;
-  font-size: 2rem;
+  font-size: 3rem;
   text-align: center;
-  font-family: 'Stalinist One', cursive;
+
+font-family: 'Bungee Spice', cursive;
 }
 .column>p{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+
+
+font-family: 'Silkscreen', cursive;
+
+    font-size: 2rem;
 }
 .column>a{
     text-decoration: none;
@@ -114,10 +121,14 @@ body{
     padding: 10px;
     border-radius: 10px 5px 10px 5px;
     border: 1px solid  white;
+    transition: 0.5s;
 }
 .column>a:hover{
     color: black;
     background: white;
+}
+.column>img{
+    border-radius: 50px 50px;
 }
 .imgstack,.abttext{
     height: 50vh;
