@@ -8,7 +8,7 @@
 body{
     background-color: black;
     overflow-x: hidden;
-    
+    width: 100vw;
 }
 .navbar{
    margin-top: 10px;
