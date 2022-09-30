@@ -1,6 +1,6 @@
 *{
     box-sizing: border-box;
-    background: black;
+    background-color: black;
     color: white;
     scroll-behavior: smooth;
 }
@@ -23,6 +23,11 @@
     /* font-family: 'Passions Conflict', cursive; */
 
 }
+.homepage>div:hover{
+    background:transparent;
+    border: 10px solid  black;
+
+}
 .navbar>a{
     text-decoration: none;
     
@@ -39,24 +44,8 @@
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-@media screen and (max-width:900px) {
-    .navbar{
-        flex-direction: column;
-    }
-    .navbar>a{
-        width:50%;
-    }
-    .showcase{
-        flex-direction: column;
-        width: 100%;
-        height: auto;
-    }
-    .showcase2{
-        flex-direction: column-reverse;
-        width: 100%;
-        height: auto;
-    }
-}
+
+
 #main{
    width:70vw;
    font-family: 'Rubik Dirt', cursive;
@@ -84,13 +73,15 @@
     font-family: 'Rubik Dirt', cursive;
     opacity: 50%;
     font-size: 4rem;
+    margin-top: 200px;
 }
-.showcase,.showcase2{
+.showcase,.showcase2,.abtbox{
     display: flex;
     margin-top: 5%;
     justify-content: center;
     
 }
+
 .column{
     flex:50%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -110,4 +101,58 @@
     color: bisque;
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.imgstack,.abttext{
+    height: 50vh;
+}
+.imgstack{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.imgstack>img{
+    max-width: 60%;
+    /* display: inline; */
+    /* position: absolute; */
+}
+.background{
+    margin-right: -50%;
+    
+}
+.foreground:hover{
+    margin-left: -10%;
+}
+
+.abttext{
+    width:60%;
+    font-size: 2rem;
+}
+.foreground{
+    background:none;
+    transition: 0.5s;
+}
+@media screen and (max-width:800px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar>a{
+        width:50%;
+    }
+    .showcase,.abtbox{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+    .showcase2{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .imgstack,.abttext{
+        width: 80%;
+    }
 }
