@@ -177,7 +177,7 @@ i{
 }
 
 .about{
-    padding-bottom: 90px;
+    margin-bottom: 90px;
 }
  
 
@@ -226,5 +226,12 @@ button,a{
     }
     .imgstack,.abttext{
         width: 80%;
+        height: auto;
+    }
+    .homepage{
+        background-image: none;
+    }
+    .about{
+        margin-bottom: 200px;
     }
 }
