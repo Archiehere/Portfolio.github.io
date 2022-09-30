@@ -272,6 +272,7 @@ nav{
     }
     .homepage{
         background-image: none;
+        height: 50vh;
     }
     .about{
         margin-bottom: 200px;
