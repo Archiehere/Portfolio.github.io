@@ -253,6 +253,7 @@ nav{
     
     .navbar>a{
         width:50%;
+        height: auto;
     }
     .showcase,.abtbox{
         flex-direction: column;
@@ -272,7 +273,8 @@ nav{
     }
     .homepage{
         background-image: none;
-        height: 50vh;
+        height: auto;
+        
     }
     .about{
         margin-bottom: 200px;
