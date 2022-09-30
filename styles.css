@@ -8,6 +8,7 @@
 body{
     background-color: black;
     overflow-x: hidden;
+    
 }
 .navbar{
    margin-top: 10px;
@@ -24,6 +25,7 @@ body{
     text-align: center;
     justify-content: center;
     font-family: 'Dancing Script', cursive;
+    
     padding: 100px;
     transition: 0.5s;
     background-color: black;
@@ -56,6 +58,7 @@ body{
 #main{
    width:70vw;
    font-family: 'Rubik Dirt', cursive;
+   
    font-size: 2rem;
 }
 
@@ -176,6 +179,32 @@ i{
 .about{
     padding-bottom: 90px;
 }
+ 
+
+ .contactpanel{
+    background-image: linear-gradient(to bottom , black, rgb(16, 3, 104));
+ }
+.contactcontainer{
+ display: flex;   
+ justify-content: center;
+ align-items: center;
+ padding: 200px;
+ flex-wrap: wrap;
+}
+.contactlink{
+    padding: 10px;
+    font-size: 3rem;
+    transition: 1s;
+}
+.contactlink:hover{
+    transform: scale(1.2);
+}
+button,a{
+    background: none;
+    text-decoration: none;
+    border: none;
+}
+
 @media screen and (max-width:800px) {
     .navbar{
         flex-direction: column;
