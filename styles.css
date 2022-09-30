@@ -13,11 +13,13 @@ html{
     overflow-x: hidden;
 }
 .navbar{
-   margin-top: 10px;
-   opacity: 50%;
+   /* margin-top: 10px; */
+   /* opacity: 50%; */
    display: flex;
+   width: 100%;
    /* justify-content: end; */
    float: right;   
+   /* padding-right: 55px; */
 }
 
 .homepage>div{
@@ -56,11 +58,25 @@ html{
     transform: translateY(4px);
   }
 
-
+#topbtn{
+    position: fixed;
+    /* font-size:small; */
+    padding: 10px;
+    /* font-size: 5%; */
+    text-align: center;
+    background-image: linear-gradient(to bottom , black, rgb(16, 3, 104));
+    /* width: 5%; */
+    top:90%;
+    left:90%;
+    z-index: +1;
+    /* transform: rotate(90 deg); */
+    display: none;
+    border: 1px solid white;
+}
 #main{
-   width:70vw;
+   width:73vw;
    font-family: 'Rubik Dirt', cursive;
-   
+   margin-top: 1%;
    font-size: 2rem;
 }
 
@@ -77,9 +93,13 @@ html{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 4%;
   }
 .heading
 {
+    /* display: inline-block;
+    margin-left:auto;
+    margin-right: auto; */
     text-align: center;
     text-decoration: underline;
     font-family: 'Rubik Dirt', cursive;
@@ -214,11 +234,23 @@ button,a{
     text-decoration: none;
     border: none;
 }
-
+nav{
+    position: fixed;
+    top:0;
+    background: black;
+    opacity: 100%;
+    z-index: +1;
+}
 @media screen and (max-width:800px) {
     .navbar{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    #main{
+        text-align: center  ;
+    }
+    
     .navbar>a{
         width:50%;
     }
@@ -243,5 +275,11 @@ button,a{
     }
     .about{
         margin-bottom: 200px;
+    }
+    nav{
+        position: static;
+    }
+    #topbtn{
+        display: block;
     }
 }
